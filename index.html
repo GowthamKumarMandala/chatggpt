@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="chatgpt.css">
+    <link rel="stylesheet" href="chatgpt.js">
+    <title>chatGPT</title>
+    <style>
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="toggle">
+            <div class="box" id="box" onClick="window.location.reload(true)">
+                + new chat
+            </div>
+            <div class="chats">
+                <div class="cchat">
+                    <div class="chat-title">
+                        <h5>Today</h5>
+                    </div>
+                    <div class="chat">
+                        <span class="material-symbols-outlined">chat_bubble</span>
+                        who are you?
+                    </div>
+                    <div class="chat">
+                        <span class="material-symbols-outlined">chat_bubble</span>
+                        what is chatGPT?
+                    </div>
+                    <div class="chat">
+                        <span class="material-symbols-outlined">chat_bubble</span>where is the lotus temple?
+                    </div>
+                </div>
+                <div class="cchat">
+                    <div class="chat-title">
+                        <h5>Yesterday</h5>
+                    </div>
+                    <div class="chat">
+                        <span class="material-symbols-outlined">chat_bubble</span> who are you?
+                    </div>
+                    <div class="chat">
+                        <span class="material-symbols-outlined">chat_bubble</span> what is chatGPT?
+                    </div>
+                    <div class="chat">
+                        <span class="material-symbols-outlined">chat_bubble</span> where is the lotus temple?
+                    </div>
+                </div>
+                <div class="cchat">
+                    <div class="chat-title">
+                        <h5>Previous 7 days</h5>
+                    </div>
+                    <div class="chat">
+                        <span class="material-symbols-outlined">chat_bubble</span> who are you?
+                    </div>
+                    <div class="chat">
+                        <span class="material-symbols-outlined">chat_bubble</span> what is chatGPT?
+                    </div>
+                    <div class="chat">
+                        <span class="material-symbols-outlined">chat_bubble</span> where is the lotus temple?
+                    </div>
+                </div>
+                <div class="cchat">
+                    <div class="chat-title">
+                        <h5>previous 30 days</h5>
+                    </div>
+                    <div class="chat">
+                        <span class="material-symbols-outlined">chat_bubble</span> who are you?
+                    </div>
+                    <div class="chat">
+                        <span class="material-symbols-outlined">chat_bubble</span> what is chatGPT?
+                    </div>
+                    <div class="chat">
+                        <span class="material-symbols-outlined">chat_bubble</span> where is the lotus temple?
+                    </div>
+                </div>
+
+            </div>
+            <hr color="grey" width="100%" size="0.6px">
+            <div class="profile">
+                <span class="material-symbols-outlined" id="account">
+                    Account_circle
+                </span>
+                my profile
+            </div>
+            <div>
+                <span class="material-symbols-outlined" id="close">close</span>
+            </div>
+        </div>
+        <div class="main">
+            <span class="material-symbols-outlined" id="menu">menu</span>
+            
+            <h1 class="chatgpt">ChatGPT</h1>
+            <div class="content">
+                <div class="newchat" id="newchat">
+                    <h4 id="response">hello! How Can I help you?</h4><br>
+
+                    <div id="cardinitial">
+                        <h3>Here are some sample questions you may ask me</h3>
+                        <div id="initial">
+                            <div class="card">
+                                <button id="qbtn">what is your name?</button>
+                            </div>
+                            <div class="card">
+                                <button id="qbtn">where are you from?</button>
+                            </div>
+                            <div class="card">
+                                <button id="qbtn">what is your purpose?</button>
+                            </div>
+                        </div>
+                        <div id="initial">
+                            <div class="card">
+                                <button id="qbtn">How does your AI work?</button>
+                            </div>
+                            <div class="card">
+                                <button id="qbtn">can you help me?</button>
+                            </div>
+                            <div class="card">
+                                <button id="qbtn">what is the meaning of life?<button>
+                            </div>
+                        </div>
+                        <div id="initial">
+                            <div class="card">
+                                <button id="qbtn">what is the weather like today?</button>
+                            </div>
+                            <div class="card">
+                                <button id="qbtn">who won the last match?</button>
+                            </div>
+                            <div class="card">
+                                <button id="qbtn">How can I improve my skill or ability?</button>
+                            </div>
+                        </div>
+                        <div id="initial">
+                            <div class="card">
+                                <button id="qbtn">can you tell me a joke?</button>
+                            </div>
+                            <div class="card">
+                                <button id="qbtn">what is the capital of india?</button>
+                            </div>
+                            <div class="card">
+                                <button id="qbtn">what is the current time?</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="msgcontent">
+                <div class="chatbox">
+                    <div class="messagebox">
+                        <input type="text" id="userbox" placeholder="Send a message...">
+                        <span class="material-symbols-outlined" id="send" onclick="talk()">
+                            send
+                        </span>
+                    </div>
+                </div>
+                <footer>Free Research Preview. ChatGPT may produce inaccurate information about people, places, or
+                    facts.
+                    ChatGPT May 24 Version</footer>
+            </div>
+        </div>
+
+    </div>
+    <script src="chatGPT.js">
+    </script>
+</body>
+
+</html>
